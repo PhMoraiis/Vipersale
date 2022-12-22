@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'SK Concretica';
+  src: url(/HTML-CSS-JS/Vipersale/src/fonts/sk-concretica-trial.ttf)
+}
+
+:root {
+  --primary-color: #EEEDEB;
+  --secondary-color: #EBF4F5;
+  --primary-gradient: linear-gradient(90deg, #d8d6d2 53%, rgba(202, 194, 187, 1) 100%);
+  --button-gradient: linear-gradient(90deg, rgba(36, 35, 51, 1) 49%, rgba(100, 100, 102, 1) 100%);
+  --blue-color: #1F1E30;
+  --grey-color: #646464;
+  --black-color: #000000;
+  --primary-font: 'SK Concretica', sans-serif;
+  --secondary-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--primary-gradient);
+  background-size: 400% 400%;
+  animation: gradient 2.5s ease-in-out infinite;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 5rem;
+  height: 9vh;
+}
+
+.logo {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.logo:hover {
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  z-index: 9999;
+  position: relative;
+}
+
+.contact {
+  border: 1px solid var(--blue-color);
+  padding: 0rem 2rem;
+  border-radius: 22px;
+}
+
+.contact:hover {
+  background: var(--button-gradient);
+  color: var(--primary-color);
+  transition: 1s all;
+}
+
+
+header ul li a {
+  color: var(--blue-color);
+  text-decoration: none;
+  padding: 0 2rem;
+  opacity: 0.8;
+  font-size: 1.1rem;
+  display: block;
+  line-height: 60px;
+}
+
+header ul li a:hover {
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  list-style: none;
+  transition: 0.5s all;
+  border-bottom: 1px solid var(--blue-color);
+  border-left: 1px solid var(--blue-color);
+  border-right: 1px solid var(--blue-color);
+}
+
+nav ul ul li {
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.fa-circle-dot {
+  color: var(--blue-color);
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.linha {
+  height: 1px;
+  background: var(--blue-color);
+  margin: 0 4rem 0 5rem;
+  margin-bottom: 2rem;
+  margin-top: -0.5rem;
+}
+
+/* FIM NAVBAR */
+
+/* FOOTER */
+.Container {
+  margin-top: 4rem;
+  display: flex;
+  font-family: var(--secondary-font);
+  color: var(--black-color);
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+.Left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Logo {
+  font-weight: bold;
+}
+
+.Desc {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.SocialContainer {
+  display: flex;
+}
+
+.SocialIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.SocialIcon:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.Center {
+  flex: 1;
+  padding: 20px;
+}
+
+.TitleFooter {
+  margin-bottom: 30px;
+}
+
+.List {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ListItem {
+  width: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.ListItem a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.ListItem:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.Right {
+  flex: 1;
+  padding: 20px;
+}
+
+.ContactItem {
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ContactItem:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.ContactItem a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+/* FIM FOOTER */
+
+/* FORM */
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem 4rem;
+}
+
+.firstTitle span {
+  color: var(--blue-color);
+  text-align: left;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.secondTitle {
+    color: var(--blue-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.paragraph {
+    color: var(--grey-color);
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+img {
+  width: 580px;
+  padding-left: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.Button {
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--blue-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+  border-radius: 22px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Button:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary-color);
+  color: var(--blue-color);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+input {
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+  color: var(--blue-color);
+  font-family: var(--secondary-font);
+}
+
+iframe {
+  margin-left: 3rem;
+  border-radius: 22px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 25px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  margin-left: 3rem;
+}
