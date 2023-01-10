@@ -238,3 +238,83 @@ nav ul ul li {
 }
 
 /* FIM FOOTER */
+
+/* THIRD SECTION */
+.titleSection {
+  color: var(--blue-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 2rem;
+  margin: 0;
+}
+
+.SectionThird {
+  display: flex;
+  padding: 0 20px 6rem 20px;
+  justify-content: space-between;
+}
+
+.ContainerCategory {
+  flex: 1;
+  margin: 4px;
+  height: 70vh;
+  position: relative;
+  filter: grayscale(0.8);
+}
+
+.ImageCategory {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ContainerCategory:hover {
+  filter: grayscale(0.2);
+  transition: 0.5s all;
+}
+
+.Info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.Title:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+
+.Button {
+  border: none;
+  padding: 10px;
+  color: var(--grey-color);
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+  border-radius: 22px;
+}
+
+.Button:hover {
+  transform: scale(1.05);
+  background-color: var(--blue-color);
+  color: var(--secondary-color);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+/* FIM THIRD SECTION */

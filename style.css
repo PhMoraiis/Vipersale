@@ -236,6 +236,7 @@ nav ul ul li {
 
 .secondSection{
     background-color: var(--primary-color);
+    padding-bottom: 5rem;
 }
 
 .secondImage {
