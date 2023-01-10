@@ -138,13 +138,12 @@ nav ul ul li {
 
 /* FOOTER */
 .Container {
+  margin-top: 4rem;
   display: flex;
   font-family: var(--secondary-font);
   color: var(--black-color);
   padding: 20px;
-  background-color: var(--primary-gradient);
-  animation: gradient 2.5s ease-in-out infinite;
-
+  background-color: var(--primary-color);
 }
 
 .Left {
@@ -238,3 +237,104 @@ nav ul ul li {
 }
 
 /* FIM FOOTER */
+
+/* FORM */
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 4rem 4rem;
+}
+
+.firstTitle span {
+  color: var(--blue-color);
+  text-align: left;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.secondTitle {
+    color: var(--blue-color);
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.paragraph {
+    color: var(--grey-color);
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+img {
+  width: 580px;
+  padding-left: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.Button {
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--blue-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+  border-radius: 22px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Button:hover {
+  transform: scale(1.05);
+  background-color: var(--secondary-color);
+  color: var(--blue-color);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+input {
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+  color: var(--blue-color);
+  font-family: var(--secondary-font);
+}
+
+iframe {
+  margin-left: 3rem;
+  border-radius: 22px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 25px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  margin-left: 3rem;
+}
